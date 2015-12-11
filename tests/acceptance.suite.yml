@@ -7,7 +7,11 @@
 class_name: AcceptanceTester
 modules:
     enabled:
-         - PhpBrowser:
-            url: 'http://dvsoft.esy.es/'
+         - Db
          - WebDriver
          - \Helper\Acceptance
+    config:
+         WebDriver:
+             url: 'http://dvsoft.esy.es/'
+             browser: 'firefox'
+             delay: 300nce
