@@ -1,0 +1,21 @@
+actor: Tester
+paths:
+    tests: tests
+    log: tests/_output
+    data: tests/_data
+    support: tests/_support
+    envs: tests/_envs
+settings:
+    bootstrap: _bootstrap.php
+    colors: true
+    memory_limit: 1024M
+extensions:
+    enabled:
+        - Codeception\Extension\RunFailed
+modules:
+    config:
+        Db:
+            dsn: 'mysql:host=http://sql33.hostinger.com.ua/phpmyadmin/index.php?db=u704678561_db&token=132eebf0f0e450024d061dc8c8c93ac7/;dbname=u704678561_dbv'
+            user: 'u704678561_root'
+            password: 'hu5xXs1u1U'
+            dump: tests/_data/dump.sql
