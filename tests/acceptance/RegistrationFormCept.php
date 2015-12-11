@@ -13,3 +13,4 @@ $I->fillField("password", "123456");
 $I->click("submit");
 $I->see("Login");
 $I->wait(2);
+$I->wait(1);

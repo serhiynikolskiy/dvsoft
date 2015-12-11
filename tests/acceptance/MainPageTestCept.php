@@ -6,3 +6,4 @@ $I->amOnPage("/");
 $I->maximizeWindow();
 $I->see("InternetShop");
 $I->wait(1);
+$I->wait(1);
