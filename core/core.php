@@ -23,5 +23,14 @@ function get_page()
 	return $result;
 }
 
-
+function check_parameter($page)
+{
+	$result=$page;
+	$part=explode("?", $page);
+	if ($part[1])
+	{
+		$result=$part[0];
+	}
+	return $result;
+}
 ?>
