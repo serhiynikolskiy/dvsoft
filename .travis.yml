@@ -1,7 +1,5 @@
 language: php
+
 php:
-  - '5.4'
-before_install:
-  - /home/travis/.phpenv/versions/5.4/bin/composer self-update
-script: java -jar selenium-server-standalone-2.48.2.jar
-script: php codecept.phar run acceptance
+  - 5.4
+  - 5.5
