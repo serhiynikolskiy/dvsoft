@@ -1,4 +1,15 @@
 <?php
-include_once("models/model_product.php");
-include_once("views/view_edit_product.php");
+/**
+ * Index.php
+ *
+ * PHP Version 5
+ *
+ * @category Ondex
+ * @package  MyPackage
+ * @author   Nikolskiy Serhiy <serhiy@example.com>
+ * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
+ * @link     http://www.hashbangcode.com/
+ */
+require_once "models/model_product.php";
+require_once "views/view_edit_product.php";
 ?>
