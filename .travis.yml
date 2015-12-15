@@ -4,5 +4,6 @@ php:
   - 5.4
   - 5.5
 before_script:
-  - php phpcs.phar index.php
+  - php phpcs.phar models/
+  - php phpcs.phar controllers/
 script: phpunit --version
