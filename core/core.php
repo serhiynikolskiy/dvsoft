@@ -1,36 +1,34 @@
 <?php
-include_once("routing.php");
-include_once("functions.php");
-include_once("db.php");
+require_once "routing.php";
+require_once "functions.php";
+require_once "db.php";
 
 function load_page()
 {
-	$page=get_page();
-	routing_page($page);
+    $page=get_page();
+    routing_page($page);
 }
 
 function get_page()
 {
-	$result="main";
-	$page=explode("/", $_SERVER['REQUEST_URI']);
-	$page=$page[1];
-	$page=check_parameter($page);
-	if ($page)
-	{
-		$result=$page;
-	}
-	
-	return $result;
+    $result="main";
+    $page=explode("/", $_SERVER['REQUEST_URI']);
+    $page=$page[1];
+    $page=check_parameter($page);
+    if ($page) {
+        $result=$page;
+    }
+    
+    return $result;
 }
 
 function check_parameter($page)
 {
-	$result=$page;
-	$part=explode("?", $page);
-	if ($part[1])
-	{
-		$result=$part[0];
-	}
-	return $result;
+    $result=$page;
+    $part=explode("?", $page);
+    if ($part[1]) {
+        $result=$part[0];
+    }
+    return $result;
 }
 ?>
