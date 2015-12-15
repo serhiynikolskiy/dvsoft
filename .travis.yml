@@ -3,6 +3,7 @@ language: php
 php:
   - 5.4
   - 5.5
-script: php phpcs.phar index.php
-
+before_script:
+  - php phpcs.phar models/
+  - php phpcs.phar controllers/
 script: phpunit --version
